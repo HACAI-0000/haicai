@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>黑白极简主页</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="photos/photography.css">
 </head>
 <body>
   <div class="container">
@@ -29,12 +30,8 @@
       </section>
 
       <section id="photography" class="section photography">
-        <h2>摄影集</h2>
-        <div class="gallery">
-          <img src="https://picsum.photos/id/1015/400/300" alt="">
-          <img src="https://picsum.photos/id/1016/400/300" alt="">
-          <img src="https://picsum.photos/id/1018/400/300" alt="">
-        </div>
+        <h2>攝影集</h2>
+        <div class="photo-grid" id="photoGrid"></div>
       </section>
 
       <section id="books" class="section books">
@@ -81,5 +78,6 @@
 
   <button id="backToTop" title="返回顶部">↑</button>
   <script src="script.js"></script>
+  <script src="photos/photography.js"></script>
 </body>
 </html>
