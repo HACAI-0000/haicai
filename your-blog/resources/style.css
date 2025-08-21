@@ -1,0 +1,6 @@
+/* 资源模块 */
+.resource-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.res{display:flex;align-items:flex-start;gap:10px}
+.res a{color:#99d4ff;text-decoration:none}
+.res a:hover{text-decoration:underline}
+@media (max-width:900px){ .resource-list{grid-template-columns:1fr} }

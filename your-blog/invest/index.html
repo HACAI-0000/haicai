@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>欲值</title>
+  <link rel="stylesheet" href="../shared/base.css"/>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="logo"></div><div><h1>我的博客</h1><small>固定画布 · 多模块</small></div></div>
+      <nav class="nav">
+        <a href="../profile/"><span class="ico">🙋</span>个人介绍</a>
+        <a href="../books/"><span class="ico">📖</span>书虫</a>
+        <a href="../logs/"><span class="ico">✍️</span>废手</a>
+        <a href="../goals/"><span class="ico">🌱</span>培养尸体</a>
+        <a href="../invest/"><span class="ico">💰</span>欲值</a>
+        <a href="../gallery/"><span class="ico">🎨</span>美感与光学</a>
+        <a href="../resources/"><span class="ico">🎵</span>乐学</a>
+      </nav>
+      <div class="footer">© 2025</div>
+    </aside>
+
+    <div class="top-blank"></div>
+    <main class="main">
+      <section class="canvas">
+        <h2>💰 欲值 · 投资收益</h2>
+
+        <div class="kpi" id="kpi"></div>
+
+        <div class="card">
+          <div class="row" id="investToggles" style="align-items:center">
+            <span class="legend"><span class="dot" style="background:#3fc1ff"></span>
+              <label><input type="checkbox" checked> 显示月收益率</label></span>
+            <span class="legend"><span class="dot" style="background:#6be675"></span>
+              <label><input type="checkbox" checked> 显示净值</label></span>
+          </div>
+          <div class="chart-wrap" style="height:380px">
+            <canvas id="equityChart"></canvas>
+          </div>
+        </div>
+
+        <p class="muted">示例数据仅用于演示。可替换为真实记录（CSV/JSON），或接入后端 API。</p>
+      </section>
+    </main>
+    <div class="bottom-blank"></div>
+  </div>
+
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

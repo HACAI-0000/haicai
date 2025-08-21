@@ -1,0 +1,10 @@
+/* 日志时间轴 */
+.timeline{position:relative;padding-left:18px}
+.timeline::before{
+  content:"";position:absolute;left:8px;top:0;bottom:0;width:2px;background:#263151;border-radius:2px
+}
+.t-item{position:relative;margin:10px 0 16px 0}
+.t-item::before{
+  content:"";position:absolute;left:-2px;top:4px;width:10px;height:10px;border-radius:50%;
+  background:var(--brand-2);box-shadow:0 0 0 3px rgba(63,193,255,.15)
+}

@@ -1,0 +1,10 @@
+/* 目标模块 */
+.columns{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.goal{border-left:4px solid #2a6aff;padding-left:10px}
+.goal.short{border-color:#7cd992}
+.goal.mid{border-color:#3fc1ff}
+.goal.long{border-color:#ffb86b}
+.progress{height:8px;border-radius:999px;background:#1a2032;border:1px solid #2c3652;overflow:hidden}
+.progress>i{display:block;height:100%;background:linear-gradient(90deg,#6be675,#3fc1ff)}
+
+@media (max-width:900px){ .columns{grid-template-columns:1fr} }
